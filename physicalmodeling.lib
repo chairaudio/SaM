@@ -97,7 +97,7 @@ pluck(k,R,pluckDistance,o) = _ : -(o) <: (_,_,_) : (*(k),  (_ <: (_,_) : (_, mem
 
 // The following is put together via Kjetil S. Matheussen's approach on the Faust mailing list 
 // and the documentation on rdtable (including in music.lib)
-presetInitIndex = (+(1)~_) - 1;  // 0,1,2,3,É
+presetInitIndex = (+(1)~_) - 1;  // 0,1,2,3,Ã‰
 mytake(k,total,longlist) = longlist : par(i,total,*(k==i)) :> _; 
 round = _:+(0.5):int:_;
 
