@@ -29,7 +29,7 @@ https://ccrma.stanford.edu/wiki/SynthAModelerFireFaderLab
 
 After you install git, you can just run
 
-    git clone https://github.com/eberdahl/SaM.git
+    git clone https://github.com/chairaudio/SaM.git
 
 to download Synth-A-Modeler into a new directory.  Then go into that directory by typing
 cd SaM
