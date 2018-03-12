@@ -5,11 +5,6 @@
 
 // 2018 adapted to Faust 2
 
-// disable for Faust 2
-//import("music.lib");
-//import("effect.lib");
-
-// enable for Faust 2
 import("all.lib");
 //import("filter.lib");
 import("SAM-fx.lib");

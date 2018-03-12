@@ -11,17 +11,17 @@
 # portions, or derivatives of the Software and Software portions.
 #
 # The end-user documentation included with the redistribution, if any,
-# must include the following acknowledgment: "This software was 
-# developed at least in part using Synth-A-Modeler, which is a modular 
-# and open-source environment for designing physical models (see 
+# must include the following acknowledgment: "This software was
+# developed at least in part using Synth-A-Modeler, which is a modular
+# and open-source environment for designing physical models (see
 # https://github.com/eberdahl/SaM)", in the same place and form as other
-# third-party acknowledgments. In addition, this acknowledgment must 
-# appear in the software itself in the same form and location as other 
+# third-party acknowledgments. In addition, this acknowledgment must
+# appear in the software itself in the same form and location as other
 # such third-party acknowledgments.
 #
-# Alternatively, if software is generated using Synth-A-Modeler, then 
-# the end-user documentation included with the generated software, if 
-# any, must include the following statement: "This software was generated 
+# Alternatively, if software is generated using Synth-A-Modeler, then
+# the end-user documentation included with the generated software, if
+# any, must include the following statement: "This software was generated
 # using Synth-A-Modeler, which is a modular and open-source environment
 # for designing physical models (see https://github.com/eberdahl/SaM)",
 # in the same place and form as other third-party acknowledgments. In
@@ -44,20 +44,12 @@
 # License along with this program.
 
 
-
-
 port(),dev0; # pos 203,61
 resonators(freq1*1.0,2.5,m*1.0),r0; # pos 64,32
 port(),dev0cpy; # pos 331,61
 
 
 pluck(k*1.0,R*1.0,maxDisp*1.0,0.00),p0,dev0,r0;
-
-
-
-
-
-
 
 
 faustcode: vol=hslider("Volume",0.2,0.0,3.0,0.05);
