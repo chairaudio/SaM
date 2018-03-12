@@ -3,8 +3,9 @@
 // 2011 and 2012 by Edgar Berdahl
 // Audio Communication Group, Technical University of Berlin
 
-import("music.lib");
-import("effect.lib");
+// 2018 adapted to Faust 2
+
+import("all.lib");
 //import("filter.lib");
 import("SAM-fx.lib");
 
