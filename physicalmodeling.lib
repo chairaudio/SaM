@@ -6,11 +6,11 @@
 // 2018 adapted to Faust 2
 
 // disable for Faust 2
-import("music.lib");
-import("effect.lib");
+//import("music.lib");
+//import("effect.lib");
 
 // enable for Faust 2
-//import("all.lib");
+import("all.lib");
 //import("filter.lib");
 import("SAM-fx.lib");
 
@@ -67,10 +67,7 @@ pluckingLogic(prevState,xthresh,xdiff) = (newState) with {
 
 pluckingStateMachine = pluckingLogic ~(_);
 
-pluckingForceEnable(state,xthresh,xdiff) = enable with {
-	// It is not possible to have both (state==0) and (state==1), so we can be
-	// sure that the output here is either 0 or 1.
-	enable = ((state==0) & (-xthresh <= xdiff) & (xdiff <= 0))*1 + ((state==1) & (0 <= xdiff) & (xdiff <= xthresh))*1;
+pluckingForceEnable(state,xthresh,xdiff) = (able) with { able = ((state==0) & (-xthresh <= xdiff) & (xdiff <= 0))*1 + ((state==1) & (0 <= xdiff) & (xdiff <= xthresh))*1;
 };
 
 calculatePluckingForceEnable = (_,_) <: (_,_,_,_) : (pluckingStateMachine, (_,_)) : pluckingForceEnable;
