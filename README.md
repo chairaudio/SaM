@@ -14,7 +14,7 @@ and ease of use. By leveraging the Faust DSP programming environment, an output 
 
 
 To download:
-git clone https://github.com/eberdahl/SaM.git
+git clone https://github.com/chairaudio/SaM.git
 
 Documentation:
 http://lac.linuxaudio.org/2012/papers/34.pdf
