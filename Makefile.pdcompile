@@ -23,14 +23,14 @@ F2PDFLAGS 		:= -r 10 -s
 ### compilation flags for Linux
 ###
 LINUXCFLAGS 	:= -DPD -fPIC -Wall -O3 -mfpmath=sse -msse -msse2 -msse3 -ffast-math
-LINUXINCLUDE 	:= -I/usr/include/pdextended
+LINUXINCLUDE 	:= -I/usr/include/pd
 
 ###--------------------------------------------
 ### compilation flags for Darwin
 ###
 DARWINCFLAGS 	:= -DPD -fPIC -Wall -O3 -msse -msse2 -msse3 -ffast-math -Wextra-tokens -Wno-unused-variable
 DYNLOAD_FLAGS	:= -bundle -undefined suppress -flat_namespace
-DARWININCLUDE 	:= -I/Applications/Pd-extended.app/Contents/Resources/include/
+DARWININCLUDE 	:= -I/Applications/Pd.app/Contents/Resources/include/
 
 ###--------------------------------------------
 ### check what type of modules to build (MacOSX Darwin or Linux)
